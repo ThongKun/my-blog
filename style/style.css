@@ -7,7 +7,123 @@ body {
     text-decoration: none;
 }
 
+header {
+    min-height: 350px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/banner.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
 
+header > * {
+    z-index: 1
+}
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url(/assets/profile.jpg);
+    background-size: cover;
+}
+
+.profile-name {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.subtext {
+    margin-top: 8px;
+
+}
+
+.main {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    max-width: 750px;
+    min-width: 600px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.post {
+    display: flex;
+    min-height: 180px;
+    border-radius: 4px;
+    border: 1px solid #eaecee;
+    min-height: 200px;
+    overflow: hidden;
+    transition: all 0.24s ease-in-out;
+}
+
+.post:hover {
+    transform: translate3d(0px, -5px, 0px);
+    box-shadow: 0 2rem 5rem 0 rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+.post-image {
+    flex-basis: 40%;
+    background-image: url(/assets/post1.jpg);
+    background-size: cover;
+    background-position: center;
+    /* border-radius: 4px 0px 0px 4px; */
+    background-color: orange;
+}
+
+.post-content {
+    flex-basis: 60%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-date{
+    font-size: 12px;
+    color: #adb5bd;
+    font-weight: 600;
+}
+
+.post-title {
+    margin-top: 16px;
+    font-size: 1.5em;
+    color: #333;
+    font-weight: 600;
+}
+
+.post-title h4 {
+    margin: 0;
+}
+
+.post-text{
+    margin-top: 4px;
+    color: #495057;
+    font-weight: 400;
+    line-height: 1.4;
+    max-height: 40px;
+    overflow: hidden;
+}
 
 footer {
     min-height: 100px;
