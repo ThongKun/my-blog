@@ -82,6 +82,7 @@ footer {
     display: flex;
     min-height: 180px;
     border-radius: 4px;
+    margin-top: 24px;
     border: 1px solid #eaecee;
     min-height: 200px;
     overflow: hidden;
