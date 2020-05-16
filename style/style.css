@@ -34,6 +34,17 @@ header::after {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+footer {
+    min-height: 100px;
+    background-color: #eaecee70;
+    color: #929eaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
 .profile-image {
     width: 100px;
     height: 100px;
@@ -75,12 +86,12 @@ header::after {
     min-height: 200px;
     overflow: hidden;
     transition: all 0.24s ease-in-out;
+    cursor: pointer;
 }
 
 .post:hover {
     transform: translate3d(0px, -5px, 0px);
     box-shadow: 0 2rem 5rem 0 rgba(0,0,0,.1);
-    cursor: pointer;
 }
 
 .post-image {
@@ -125,13 +136,23 @@ header::after {
     overflow: hidden;
 }
 
-footer {
-    min-height: 100px;
-    background-color: #eaecee70;
-    color: #929eaa;
+.nav-button.new-post-button  {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    background-color: #004186;
+    color: white;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    font-size: 14px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    transition: all 0.25s ease;
+}
+
+.nav-button.new-post-button:hover {
+    background-color: #002349;
 }
