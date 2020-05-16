@@ -15,7 +15,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/banner.jpeg);
+    background-image: url(/frontend/assets/banner.jpeg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -50,7 +50,7 @@ footer {
     height: 100px;
     background-color: white;
     border-radius: 50%;
-    background-image: url(/assets/profile.jpg);
+    background-image: url(/frontend/assets/profile.jpg);
     background-size: cover;
 }
 
@@ -96,7 +96,7 @@ footer {
 
 .post-image {
     flex-basis: 40%;
-    background-image: url(/assets/post1.jpg);
+    background-image: url(/frontend/assets/post1.jpg);
     background-size: cover;
     background-position: center;
     /* border-radius: 4px 0px 0px 4px; */
