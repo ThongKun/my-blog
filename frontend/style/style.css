@@ -7,18 +7,20 @@ body {
     text-decoration: none;
 }
 
-header {
+header{
     min-height: 350px;
-    background-color: blue;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/frontend/assets/banner.jpeg);
     background-size: cover;
     background-position: center;
     position: relative;
+}
+
+.home-page header{
+    background-image: url(/assets/banner.jpeg);
 }
 
 header > * {
@@ -50,7 +52,7 @@ footer {
     height: 100px;
     background-color: white;
     border-radius: 50%;
-    background-image: url(/frontend/assets/profile.jpg);
+    background-image: url(/assets/profile.jpg);
     background-size: cover;
 }
 
@@ -97,11 +99,10 @@ footer {
 
 .post-image {
     flex-basis: 40%;
-    background-image: url(/frontend/assets/post1.jpg);
+    background-image: url(/assets/post1.jpg);
     background-size: cover;
     background-position: center;
     /* border-radius: 4px 0px 0px 4px; */
-    background-color: orange;
 }
 
 .post-content {
@@ -165,4 +166,8 @@ footer {
     border: 1px solid #004186;
     border-radius: 5px;
     padding: 5px 8px;
+}
+
+.post-link {
+    text-decoration: none;
 }
