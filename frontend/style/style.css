@@ -19,7 +19,7 @@ header{
     position: relative;
 }
 
-.home-page header{
+.home-page header, .new-post-page header{
     background-image: url(/assets/banner.jpeg);
 }
 
@@ -56,7 +56,7 @@ footer {
     background-size: cover;
 }
 
-.profile-name {
+.profile-name, .title {
     font-size: 3em;
     font-weight: bold;
 }
@@ -83,7 +83,7 @@ footer {
 .post {
     display: flex;
     min-height: 180px;
-    border-radius: 4px;
+    border-radius: 4.8px;
     margin-top: 24px;
     border: 1px solid #eaecee;
     min-height: 200px;
@@ -99,10 +99,8 @@ footer {
 
 .post-image {
     flex-basis: 40%;
-    background-image: url(/assets/post1.jpg);
     background-size: cover;
     background-position: center;
-    /* border-radius: 4px 0px 0px 4px; */
 }
 
 .post-content {
